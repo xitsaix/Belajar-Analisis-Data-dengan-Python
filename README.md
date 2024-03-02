@@ -6,16 +6,12 @@
 
 ## Instal package/library
 
-    ```shell
     pip install -r requirements.txt
-    ```
 
-## Running
+## Run
 
-    ```shell
     cd bike-sharing/dashboard/
     streamlit run dashboard.py
-    ```
 
 ## Mine
-    Deployed [here](https://bike-sharing-ariniamsr.streamlit.app/)
+    Deployed [here](https://xitsaix.streamlit.app/)
