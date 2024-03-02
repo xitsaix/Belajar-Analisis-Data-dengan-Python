@@ -85,18 +85,6 @@ st.header('Bike Sharing Data')
 st.subheader('Daily Bike Sharings')
 col1, col2, col3 = st.columns(3)
 
-with col1:
-    total_orders = day_df_count_2011.count_cr.sum()
-    st.metric("Total of Sharing Bikes", value=total_orders)
-
-with col2:
-    total_sum = reg_df.register_sum.sum()
-    st.metric("Total Registered", value=total_sum)
-
-with col3:
-    total_sum = cas_df.casual_sum.sum()
-    st.metric("Total Casual", value=total_sum)
-
 st.subheader("Pada jam berapa terdapat penyewa paling banyak dan paling sedikit?")
 fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(35, 15))
 
@@ -136,3 +124,15 @@ ax.set_xlabel(None)
 ax.tick_params(axis='x', labelsize=35)
 ax.tick_params(axis='y', labelsize=30)
 st.pyplot(fig)
+
+with col1:
+    total_orders = day_df_count_2011.count_cr.sum()
+    st.metric("Total of Sharing Bikes", value=total_orders)
+
+with col2:
+    total_sum = reg_df.register_sum.sum()
+    st.metric("Total Registered", value=total_sum)
+
+with col3:
+    total_sum = cas_df.casual_sum.sum()
+    st.metric("Total Casual", value=total_sum)
