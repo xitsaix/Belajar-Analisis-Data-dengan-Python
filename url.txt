@@ -1,1 +1,2 @@
-
+Github: https://github.com/xitsaix/Belajar-Analisis-Data-dengan-Python
+Streamlit: https://xitsaix.streamlit.app/
